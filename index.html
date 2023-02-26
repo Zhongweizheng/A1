@@ -1,14 +1,170 @@
-<p>你好，世界，我是仲伟正</p>
- <p> 优势供应：</p>
- <p>BOC-L-脯氨酸	15761-39-4</p>
- <p>Z-L-谷氨酸	1155-62-0</p>
- <p>BOC-L-丙氨酸	15761-38-3</p>
- <p>BOC-甘氨酸	4530-20-5</p>
- <p>氨基甲酸苄酯	621-84-1</p>
- <p>FMOC-L-谷氨酸-5-叔丁酯	71989-18-9</p>
- <p>BOC-L-谷氨酰胺    	13726-85-7</p>
- <p>L-缬氨酸甲酯盐酸盐	6306-52-1</p>
- <p>(S)-4-苯基-2-恶唑烷酮	99395-88-7</p>
- <p>N-BOC-哌嗪	        57260-71-6</p>
-<p>联系电话:17660455725
-</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex 布局</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: #eee;
+      }
+      /* * {
+        border: 1px solid black;
+      } */
+      .yinying {
+        box-shadow: rgb(rgb(104, 78, 78), rgb(80, 136, 80), rgb(78, 78, 145));
+      }
+      .flex {
+        display: flex;
+      }
+      .baise {
+        background-color: white;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .mg8 {
+        margin: 8px;
+      }
+      .mgr8 {
+        margin-right: 8px;
+      }
+      .mgt8 {
+        margin-top: 8px;
+      }
+      .daohang {
+        padding: 20px;
+        border-bottom: 1px solid rgb(190, 189, 189);
+        font-size: 14px;
+        color: #666;
+      }
+      @media (max-width: 600px) {
+        .ceBian {
+          display: none;
+        }
+        .neiRong {
+          flex-direction: column;
+        }
+        .shuJuQu {
+          flex-direction: column;
+        }
+        .youQu {
+          margin-left: 8px;
+        }
+        .shuJu {
+          margin: 0 0 8px;
+          flex: auto;
+        }
+      }
+      .neiRong::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <!-- 侧边栏 -->
+    <div style="width: 200px; z-index: 2" class="ceBian baise yinying">
+      <!-- 头像栏 -->
+      <div
+        style="
+          padding: 10px;
+          align-items: center;
+          justify-content: center;
+          border-bottom: 1px solid #999;
+        "
+        class="flex"
+      >
+        <img src="2.jpg" width="40px" height="40px" alt="" />
+        <div style="margin-left: 10px">仲维正</div>
+      </div>
+      <!-- 导航栏 -->
+      <div class="flex1">
+        <div class="daohang">在职公司:上海瀚鸿</div>
+        <div class="daohang">主营:医药中间体</div>
+        <div class="daohang">副业:打卦</div>
+        <div class="daohang">地址:上海市徐汇区</div>
+        <div class="daohang">联系方式:17660455725</div>
+      </div>
+    </div>
+    <!-- 主区域 -->
+    <div class="flex1 flex column yinying">
+      <!-- 头部栏 -->
+      <div style="height: 60px; z-index: 1" class="baise yinying">
+        <p style="margin-left: 10px; height: 5px">搜索</p>
+        <input style="margin-left: 10px; height: 5px; width: 100px" />
+      </div>
+      <!-- 内容区 -->
+      <div style="overflow: auto" class="neiRong flex1 flex yinying">
+        <!-- 左区 -->
+        <div style="flex: 3" class="flex column mg8 yinying">
+          <!-- 数据区 -->
+          <div class="flex shuJuQu yinying">
+            <!-- 数据块 -->
+            <div style="height: 100px" class="shuJu flex1 baise mgr8 yinying">
+              <b>药物分子砌块</b>
+            </div>
+            <div style="height: 100px" class="shuJu flex1 baise mgr8 yinying">
+              <b>原料药和中间体</b>
+            </div>
+            <div style="height: 100px" class="shuJu flex1 baise mgr8 yinying">
+              <b>CRO和CDMO</b>
+            </div>
+            <div style="height: 100px" class="shuJu flex1 baise yinying">
+              <b>紫薇</b>
+            </div>
+          </div>
+          <!-- 列表区 -->
+          <div class="flex column yinying">
+            <!-- 列表项 -->
+            <div style="height: 160px" class="baise mgt8 yinying">
+              <p>品名:D-色氨酸</p>
+            </div>
+            <div style="height: 160px" class="baise mgt8 yinying">
+              <p>品名:D-丝氨酸</p>
+            </div>
+            <div style="height: 160px" class="baise mgt8 yinying">
+              <p>品名:L-正缬氨酸</p>
+            </div>
+            <div style="height: 160px" class="baise mgt8 yinying">
+              <p>品名:胞嘧啶</p>
+            </div>
+            <div style="height: 160px" class="baise mgt8 yinying">
+              <p>品名:R-3-氨基丁酸</p>
+            </div>
+            <div style="height: 160px" class="baise mgt8 yinying">
+              <p>品名:L-叔亮氨酸</p>
+            </div>
+            <div style="height: 160px" class="baise mgt8 yinying">
+              <p>品名:BOC-哌嗪</p>
+            </div>
+            <div style="height: 160px" class="baise mgt8 yinying">
+              <p>品名:L-缬氨酸甲酯盐酸盐</p>
+            </div>
+            <div style="height: 160px" class="baise mgt8 yinying">
+              <p>品名:BOC-L-脯氨酸</p>
+            </div>
+          </div>
+        </div>
+        <!-- 右区 -->
+        <div style="flex: 1" class="youQu flex column mgr8 yinying">
+          <!-- 提示区 -->
+          <div style="height: 150px" class="baise yinying">
+            <p>数据来自:<br />上海瀚鸿科技股份有限公司</p>
+            <p>http://www.hanhonggroup.com</p>
+          </div>
+          <!-- 消息区 -->
+          <div style="height: 300px" class="baise mgt8 yinying">
+            <p>玄学数据来自:<br />微信公众号-戊华</p>
+            <p>https://mp.weixin.qq.com<br>/s/s_Av0BZWwLV2iqL7FuVTBQ</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
